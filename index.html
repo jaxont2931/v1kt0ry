@@ -1030,3 +1030,26 @@
 		<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5cb78ddcc57d4a50b6cdd8bf07cc2e1d"}'></script>
 	</body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My GitHub Game</title>
+    <style>
+        body { text-align: center; font-family: sans-serif; padding-top: 50px; }
+        #game-btn { padding: 20px 40px; font-size: 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Score: <span id="score">0</span></h1>
+    <button id="game-btn">Click Me!</button>
+
+    <script>
+        let score = 0;
+        const scoreDisplay = document.getElementById('score');
+        document.getElementById('game-btn').onclick = () => {
+            score++;
+            scoreDisplay.innerText = score;
+        };
+    </script>
+</body>
+</html>
